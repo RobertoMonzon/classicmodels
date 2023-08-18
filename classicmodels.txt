@@ -1,0 +1,5 @@
+CREATE VIEW `classicmodel` AS
+SELECT customers.contactFirstName,customers.contactLastName,orders.orderNumber,orders.customerNumber
+FROM customers
+INNER JOIN orders
+ON customers.customerNumber = orders.customerNumber;
